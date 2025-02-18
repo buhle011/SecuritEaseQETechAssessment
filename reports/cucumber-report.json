@@ -1,0 +1,889 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;standard-user-login",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Standard User Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 480741700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2936889699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I login with \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174146499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the \"Products\" page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12739800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 365130600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;problem-user-login",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Problem User Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 590814300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2685800200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I login with \"problem_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149977800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the \"Products\" page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7130400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 449278000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;blocked-user-login",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Blocked User Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1114460499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2739625000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I login with \"locked_out_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126502599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see an error message \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12191799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 276255199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "logout-process;user-logs-out-successfully",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "User logs out successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 654481899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3007619899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login with \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157827600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I add random products to the cart",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117485099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I verify the cart count updates to \"3\"",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5407899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95508600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I enter checkout details with first name \"Sam\", last name \"West\", and zip code \"12345\"",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89256300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I complete the order",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44700199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I should see the order confirmation page",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5179000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click the logout button",
+            "match": {
+              "location": "stepdefinitions\\logout.steps.js:18"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 597799,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'logout')\n    at World.<anonymous> (E:\\Projects\\Automation\\WebAutomationTest-Framework\\stepdefinitions\\logout.steps.js:19:25)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "stepdefinitions\\logout.steps.js:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 632783100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "logout-process",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Logout Process",
+    "tags": [],
+    "uri": "features\\logout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-interaction;add-random-products-to-the-cart-and-proceed-to-checkout",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Add random products to the cart and proceed to checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 806367399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2900827000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I login with \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212358700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I add random products to the cart",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182473300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify the cart count updates to \"3\"",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3296800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115982100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should be taken to the checkout page",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14984000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 303130199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@product",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-interaction;add-random-products-to-the-cart-and-proceed-to-checkout",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Add random products to the cart and proceed to checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 620345599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2937272799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I login with \"problem_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157582399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I add random products to the cart",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132259500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify the cart count updates to \"3\"",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26504799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154823599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should be taken to the checkout page",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11463999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 349230999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@product",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-interaction;complete-the-order-after-proceeding-to-checkout",
+        "keyword": "Scenario Outline",
+        "line": 31,
+        "name": "Complete the order after proceeding to checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 460657800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3013251499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I login with \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205039199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I add random products to the cart",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119522199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I verify the cart count updates to \"3\"",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2994800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88299799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I enter checkout details with first name \"John\", last name \"Doe\", and zip code \"12345\"",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87243500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I complete the order",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73113699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I should see the order confirmation page",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7516599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 342907000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@product",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-interaction;complete-the-order-after-proceeding-to-checkout",
+        "keyword": "Scenario Outline",
+        "line": 32,
+        "name": "Complete the order after proceeding to checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 469493999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3024636800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I login with \"problem_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "stepdefinitions\\login.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132985399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I add random products to the cart",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156752300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I verify the cart count updates to \"3\"",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10754000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137665399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I enter checkout details with first name \"Jr\", last name \"Zulu\", and zip code \"12345\"",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67319900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I complete the order",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:40"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 10005756000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 10000 milliseconds\n    at Timeout.<anonymous> (E:\\Projects\\Automation\\WebAutomationTest-Framework\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I should see the order confirmation page",
+            "match": {
+              "location": "stepdefinitions\\product.steps.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 296566800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@product",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-interaction",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product Interaction",
+    "tags": [],
+    "uri": "features\\product.feature"
+  }
+]
