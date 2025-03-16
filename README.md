@@ -1,18 +1,54 @@
-# Playwright Web Automation
+# FRONT-END AUTOMATION TASK
 
-## Instructions
-repo link : https://github.com/buhle011/WebAutomationTestAssessnment.git
-Clone the repository.
-Install dependencies:
-Install playwright : npm init playwright@latest
-choose Javascript
-install cucumber   : npm i @cucumber/cucumber
-Install the cucumber-html-reporter package : npm install --save-dev cucumber-html-reporter 
-Run tests : npx cucumber-js 
-To execute all the tests : npx cucumber-js --tags "@test" 
-To execute login tests : npx cucumber-js --tags "@login"
-To execute logout tests : npx cucumber-js --tags "@logout"
-To execute product tests : npx cucumber-js --tags "@product"
-After running the tests and generating the generate the HTML report generate-report.js
+## Playwright Web Automation
+
+### Instructions
+
+**Repo Link:** [SecuritEaseQETechAssessment](https://github.com/buhle011/SecuritEaseQETechAssessment.git)
+
+1. Clone the repository:
+   
+   git clone https://github.com/buhle011/SecuritEaseQETechAssessment.git
+  
+
+2. Install dependencies:
+   
+   npm init playwright@latest
+  
+   - Choose **JavaScript**
+
+3. Install Cucumber:
+  
+   npm i @cucumber/cucumber
+   
+
+4. Install the cucumber-html-reporter package:
+   
+   npm install --save-dev cucumber-html-reporter
+   
+
+5. Run tests:
+   
+   npx cucumber-js
+   
+
+6. Execute specific test tags:
+   - Run **all tests**:
+     
+     npx cucumber-js --tags "@test"
+     
+   - Run **results tests**:
+     
+     npx cucumber-js --tags "@results"
+     
+   - Run **search tests**:
+     
+     npx cucumber-js --tags "@search"
+     
+
+7. Generate the HTML report:
+  
+   node generate-report.js
+   
 
 
