@@ -1,0 +1,214 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-03-17T07:26:11.360Z",
+        "line": 6,
+        "name": "Validate schema",
+        "description": "",
+        "id": "schema-validation;validate-schema",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 291161500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API endpoint is \"https://restcountries.com/v3.1/all/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://restcountries.com/v3.1/all/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.StepDefs.theAPIEndpointIs(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2331684200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I send a GET request",
+            "match": {
+              "location": "stepDefinitions.StepDefs.iSendAGETRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16996400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the response should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefs.theResponseShouldBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 638458700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the response should contain \"name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.StepDefs.theResponseShouldContain(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 244584200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the response should contain \"capital\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"capital\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.StepDefs.theResponseShouldContain(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168165100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the response should contain \"region\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"region\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.StepDefs.theResponseShouldContain(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Schema Validation",
+    "description": "  As a consumer of the API\n  I want to ensure that the data returned from the API conforms to published schema\n  So that my application can reliably consume and process the data returned",
+    "id": "schema-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/countryTests.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-03-17T07:26:15.108Z",
+        "line": 6,
+        "name": "Confirm number of countries",
+        "description": "",
+        "id": "country-confirmation;confirm-number-of-countries",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API endpoint is \"https://restcountries.com/v3.1/all/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://restcountries.com/v3.1/all/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.StepDefs.theAPIEndpointIs(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1360962000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I send a GET request",
+            "match": {
+              "location": "stepDefinitions.StepDefs.iSendAGETRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2999100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the response should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefs.theResponseShouldBe(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Expected 195 countries but got 250 expected:\u003c195\u003e but was:\u003c250\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat stepDefinitions.StepDefs.theResponseShouldContainExactlyCountries(StepDefs.java:64)\r\n\tat ✽.the response should contain exactly 195 countries(file:///E:/Projects/Automation/SecuriteEaseAssessment/BackEndTest-Framework/SecuriteEase-Api-Framework/src/test/java/features/country_confirmation.feature:10)\r\n",
+              "duration": 170109500,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the response should contain exactly 195 countries",
+            "match": {
+              "arguments": [
+                {
+                  "val": "195",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.StepDefs.theResponseShouldContainExactlyCountries(int)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Country Confirmation",
+    "description": "  As a map builder\n  I want to confirm that there are 195 countries in the world\n  So that my maps are accurate and reflect current geopolitical boundaries",
+    "id": "country-confirmation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/country_confirmation.feature",
+    "tags": []
+  }
+]

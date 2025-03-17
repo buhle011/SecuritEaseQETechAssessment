@@ -1,0 +1,12 @@
+[
+    {
+        "name": { "common": "South Africa", "official": "Republic of South Africa" },
+        "capital": ["Pretoria"],
+        "region": "Africa"
+    },
+    {
+        "name": { "common": "Canada", "official": "Canada" },
+        "capital": ["Ottawa"],
+        "region": "Americas"
+    }
+]

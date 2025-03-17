@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="SecuriteEase-Api-Framework" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="runners.TestRunner" time="0.169">
+    <testsuite name="Schema Validation" time="0.159">
+      <testcase name="Validate schema" classname="Schema Validation" time="0.159">
+        <error>io.cucumber.junit.UndefinedStepException: The step "the API endpoint is "https://restcountries.com/v3.1/all/"" is undefined. You can implement it using the snippet(s) below:
+
+@Given("the API endpoint is {string}")
+public void the_api_endpoint_is(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("I send a GET request")
+public void i_send_a_get_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the response should be {int}")
+public void the_response_should_be(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the response should contain {string}")
+public void the_response_should_contain(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Country Confirmation" time="0.009">
+      <testcase name="Confirm number of countries" classname="Country Confirmation" time="0.009">
+        <error>io.cucumber.junit.UndefinedStepException: The step "the API endpoint is "https://restcountries.com/v3.1/all/"" is undefined. You can implement it using the snippet(s) below:
+
+@Given("the API endpoint is {string}")
+public void the_api_endpoint_is(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("I send a GET request")
+public void i_send_a_get_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the response should be {int}")
+public void the_response_should_be(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the response should contain exactly {int} countries")
+public void the_response_should_contain_exactly_countries(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="SecuriteEase-Api-Framework" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="runners.TestRunner" time="6.028">
+    <testsuite name="Schema Validation" time="4.357">
+      <testcase name="Validate schema" classname="Schema Validation" time="4.357"/>
+    </testsuite>
+    <testsuite name="Country Confirmation" time="1.671">
+      <testcase name="Confirm number of countries" classname="Country Confirmation" time="1.671">
+        <failure>java.lang.AssertionError: Expected 195 countries but got 250 expected:&lt;195&gt; but was:&lt;250&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:835)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:647)&#13;
+	at stepDefinitions.StepDefs.theResponseShouldContainExactlyCountries(StepDefs.java:64)&#13;
+	at ✽.the response should contain exactly 195 countries(file:///E:/Projects/Automation/SecuriteEaseAssessment/BackEndTest-Framework/SecuriteEase-Api-Framework/src/test/java/features/country_confirmation.feature:10)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
